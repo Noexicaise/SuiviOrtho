@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Suivi Maya 🦷</title>
+    <title>Suivi Ortho 🦷</title>
     
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#6366F1">
@@ -44,7 +44,7 @@
 
     <header class="bg-white p-6 shadow-sm rounded-b-[40px] mb-6 flex justify-between items-center border-b border-slate-100">
         <div>
-            <h1 class="text-2xl font-extrabold text-slate-800 tracking-tight text-indigo-600">Suivi Maya ✨</h1>
+            <h1 class="text-2xl font-extrabold text-slate-800 tracking-tight text-indigo-600">Suivi Ortho ✨</h1>
             <div class="flex items-center gap-2">
                 <div id="status-dot" class="h-2 w-2 rounded-full bg-emerald-500"></div>
                 <p id="status-text" class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Stockage Local OK</p>
@@ -167,7 +167,7 @@
             
             document.getElementById('counter').innerText = `${currentTotal} / ${totalDays}`;
             document.getElementById('progress-bar').style.width = `${Math.min((currentTotal/totalDays)*100, 100)}%`;
-            document.getElementById('message').innerText = currentTotal >= totalDays ? "Gagné Maya ! 🎉" : (isAfter19h && !daysState[todayStr] ? "Vite Maya ! 🦷" : "Bravo Maya ! ✨");
+            document.getElementById('message').innerText = currentTotal >= totalDays ? "Gagné ! 🎉" : (isAfter19h && !daysState[todayStr] ? "Vite ! 🦷" : "Bravo ! ✨");
         }
 
         let lastTapTime = 0;
@@ -258,4 +258,5 @@
     </script>
 </body>
 </html>
+
 
